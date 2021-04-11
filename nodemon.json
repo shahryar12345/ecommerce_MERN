@@ -1,0 +1,6 @@
+{
+    "env": {
+        "PORT": 8080,
+        "MONGO_ATLAS_PASS": "GAdTI6FISn52tdA4"
+    }
+}

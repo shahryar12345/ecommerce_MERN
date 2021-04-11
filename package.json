@@ -1,0 +1,65 @@
+{
+  "name": "lashcart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "buildClient": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "runClient": "cd client && npm run build",
+    "startServer": "npm run buildClient && npm start",
+    "startServerDev": "npm run runClient && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roundCubeLabs/Lashcart.git"
+  },
+  "keywords": [],
+  "author": "roundCube Labs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roundCubeLabs/Lashcart/issues"
+  },
+  "homepage": "https://github.com/roundCubeLabs/Lashcart#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "*",
+    "body-parser": "^1.19.0",
+    "browserslist": "^4.12.0",
+    "caniuse-lite": "^1.0.30001064",
+    "connect-flash": "*",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-messages": "*",
+    "express-session": "^1.17.1",
+    "express-validator": "^5.3.1",
+    "file-system": "^2.2.2",
+    "joi": "^14.3.1",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.15",
+    "mongoose-unique-array": "^0.3.4",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "nodemailer": "^5.1.1",
+    "passport": "^0.4.1",
+    "passport-http": "*",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "*",
+    "rand-token": "^0.4.0",
+    "react-alert": "^5.5.0",
+    "react-meta-tags": "^1.0.1",
+    "react-simplert": "0.0.2",
+    "react-star-ratings": "^2.3.0",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

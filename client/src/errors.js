@@ -1,0 +1,21 @@
+module.exports = {
+    PRODUCT_NAME: 'Product Name should be of atleast 4 characters.',
+    REQUIRED_FIELDS: 'Please fill all the required fields properly and try again.',
+    CATEGORY_MISSING: 'Please select a category for your product to continue.',
+    SKU_PRICE: 'Price of an SKU can not be empty.',
+    SKU_QUANTIY: 'Quantity of an SKU can not be empty.',
+    SKU_SELLER: 'Seller SKU can not be empty.',
+    PRODUCT_IMAGE: 'There should atleast be one image for the product.',
+    VARIATION_TYPE: 'Variation type can not be empty.',
+    VARIATION_VALUE: 'Variation Value can not be empty.',
+    BRAND_NAME: 'Brand name is Required',
+    //PRODUCT_IMAGE:'Must upload atleast 1 Product image',
+    HIGHLIGHT:'Highlights is Required',
+    WARRANTY_TYPE: 'Please select the Warranty type',
+    WHATS_IN_THE_BOX:'Whats in the box field is required.',
+    PACKAGE_WEIGHT:'Package Weigth is required,',
+    LENGTH:'Length Field is required.',
+    WIDTH: 'Width field is required',
+    HEIGHT:'Height Field is required.',
+    MODEL_NAME: 'Model is required'
+}
