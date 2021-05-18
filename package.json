@@ -9,7 +9,8 @@
     "buildClient": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "runClient": "cd client && npm run build",
     "startServer": "npm run buildClient && npm start",
-    "startServerDev": "npm run runClient && npm start"    
+    "startServerDev": "npm run runClient && npm start",
+    "prestart": "npm run build --prefix client"    
   },
   "repository": {
     "type": "git",
