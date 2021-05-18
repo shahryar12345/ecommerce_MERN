@@ -19,9 +19,20 @@ const mongoose = require('mongoose');
 
 // SS-CHANGE
 //mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect('mongodb://127.0.0.1:27017/lashcart', {
+// mongoose.connect('mongodb://127.0.0.1:27017/lashcart', {
+//   useNewUrlParser: true
+// });
+
+// mongoose.connect('mongodb://node-react-starter-db/node-react-starter-db', {
+//   useNewUrlParser: true
+// });
+
+mongoose.connect('mongodb+srv://shahryar:ItsAll.007.AboutWork@cluster0.qfwgy.mongodb.net/lashcart?retryWrites=true&w=majority', {
   useNewUrlParser: true
 });
+
+
+//mongodb://node-react-starter-db/node-react-starter-db
 
 const connection = mongoose.connection;
 connection.once('open', function() {
@@ -49,17 +60,17 @@ app.all('*', function(req, res, next) {
   console.log('app.all : ORIGIN  ' + req.headers.origin);
 
   // res.header('Access-Control-Allow-Origin', '*');
-  res.header(
-    'Access-Control-Allow-Origin',
-    'http://seller.lashcart.com.au'
-  );
+  // res.header(
+  //   'Access-Control-Allow-Origin',
+  //   'http://seller.lashcart.com.au'
+  // );
 
   //  res.header(
   //   'Access-Control-Allow-Origin',
   //   'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com'
   // );
 
-  //res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3002');
   res.header('Access-Control-Allow-Credentials', true);
   res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
@@ -71,10 +82,10 @@ app.use(function(req, res, next) {
   console.log('app.use : ORIGIN  ' + req.headers.origin);
   res.header('Access-Control-Allow-Origin', '*');
   
-  res.header(
-    'Access-Control-Allow-Origin',
-    'http://seller.lashcart.com.au'
-  );
+  // res.header(
+  //   'Access-Control-Allow-Origin',
+  //   'http://seller.lashcart.com.au'
+  // );
 
   
   // res.header(
@@ -82,7 +93,7 @@ app.use(function(req, res, next) {
   //   'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com'
   // );
 
-  // res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+   res.header('Access-Control-Allow-Origin', 'http://localhost:3002');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
@@ -173,6 +184,7 @@ app.get('*', function(req, res) {
 // });
 
 const port = process.env.PORT || 3000;
+//const port = 3002;
 app.listen(port, () => {
   //SS-CHANGED
   //process.env.NODE_ENV = 'dev';

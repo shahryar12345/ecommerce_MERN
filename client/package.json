@@ -40,7 +40,8 @@
     "react-swipeable-views": "^0.13.3",
     "react-touch-carousel": "^0.9.3",
     "react-transition-group": "^4.3.0",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "vm-browserify": "^1.1.2"
   },
   "scripts": {
     "start": "set HTTPS=true&&react-scripts start",

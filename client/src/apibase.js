@@ -7,7 +7,7 @@ const prod = {
   // BASE_URL: 'http://ec2-52-15-80-58.us-east-2.compute.amazonaws.com:8080/api/' //PRODUCTION
   //BASE_URL: 'http://lashcart.com.au/api/'
 
-  BASE_URL: 'http://localhost:8080/api/', //SS
+  BASE_URL: 'http://localhost:3002/api/', //
   //BASE_URL: 'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com/api/'
   //BASE_URL: 'http://seller.lashcart.com.au/api/'
 
@@ -18,7 +18,7 @@ const prod = {
 };
 const dev = {
   //BASE_URL: 'http://192.168.0.103:8080/api/' //DEBUG
-  BASE_URL: 'http://localhost:8080/api/', //DEBUG
+  BASE_URL: 'http://localhost:3002/api/', //DEBUG
   //BASE_URL: 'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com/api/'
   //BASE_URL: 'http://seller.lashcart.com.au/api/'
 };
