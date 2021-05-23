@@ -70,7 +70,8 @@ app.all('*', function(req, res, next) {
   //   'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com'
   // );
 
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3002');
+  //res.header('Access-Control-Allow-Origin', 'http://localhost:3002');
+  res.header('Access-Control-Allow-Origin', 'https://shrouded-gorge-98113.herokuapp.com/');
   res.header('Access-Control-Allow-Credentials', true);
   res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
@@ -93,7 +94,9 @@ app.use(function(req, res, next) {
   //   'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com'
   // );
 
-   res.header('Access-Control-Allow-Origin', 'http://localhost:3002');
+   //res.header('Access-Control-Allow-Origin', 'http://localhost:3002');
+   res.header('Access-Control-Allow-Origin', '   https://shrouded-gorge-98113.herokuapp.com/');
+
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
