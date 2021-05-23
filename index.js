@@ -183,7 +183,7 @@ app.get('*', function(req, res) {
 //     res.send("hello");
 // });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3002;
 //const port = 3002;
 app.listen(port, () => {
   //SS-CHANGED

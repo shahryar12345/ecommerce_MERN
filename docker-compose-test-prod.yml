@@ -23,7 +23,7 @@ services:
     volumes: 
       - .:/app
     ports:
-      - "3002:8080"
+      - "3002:3002"
     # depends_on:
     #   - node-react-starter-db
     environment:
