@@ -10,16 +10,19 @@ const prod = {
   //BASE_URL: 'http://localhost:'+process.env.PORT+'/api/', //
   //BASE_URL: 'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com/api/'
   //BASE_URL: 'http://seller.lashcart.com.au/api/'
-  BASE_URL: 'https://shrouded-gorge-98113.herokuapp.com/api/', //DEBUG
+  //BASE_URL: 'https://shrouded-gorge-98113.herokuapp.com/api/', //DEBUG
   
-
+  BASE_URL: 'http://localhost:3002/api/', //DEBUG
+  
   //BASE_URL: 'http://192.168.0.103:8080/api/' //DEBUG
 
 
 };
 const dev = {
   //BASE_URL: 'http://192.168.0.103:8080/api/' //DEBUG
-  BASE_URL: 'https://shrouded-gorge-98113.herokuapp.com/api/', //DEBUG
+  //BASE_URL: 'https://shrouded-gorge-98113.herokuapp.com/api/', //DEBUG
+  
+  BASE_URL: 'http://localhost:3002/api/', //DEBUG
   
   //BASE_URL: 'http://localhost:'+process.env.PORT+'/api/', //DEBUG
   //BASE_URL: 'http://ec2-3-6-36-149.ap-south-1.compute.amazonaws.com/api/'
